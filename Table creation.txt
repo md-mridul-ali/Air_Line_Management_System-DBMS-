@@ -1,0 +1,75 @@
+1.create user airlinemanagment identified by wrong
+
+2.grant connect, resource to airlinemanagment
+
+3.create table passenger (p_name varchar2(30),pass_no number(10) primary key, p_phn_no varchar(15), p_blood_group varchar(6),p_gender varchar(6),visa varchar(10))
+
+4.1.create table buy (ticket_no number(10) primary key, flight_date date, seat_no number(5), ticket_type varchar2(20), price number(6,2), flight_no number(5),pass_no number(10))
+
+4.2.alter table buy add constraint pass foreign key (pass_no) references passenger (pass_no)
+
+5.create table location (city varchar(10) primary key,country varchar(10))
+
+6.create table airhostess(ah_name varchar2(30), ah_id number(10) primary key, ah_join_date date, ah_blood_group varchar(6), ah_gender varchar(6), ah_phn_no varchar(15), salary number(6,2))
+
+7.create table service(pass_no number(10) primary key, ah_id number(10))
+
+7.1.alter table service add constraint ah foreign key (ah_id) references airhostess (ah_id)
+
+8.create table carry (pass_no number(10) primary key, p_name varchar2(30), p_phn_no number(15), p_blood_group varchar(6), p_gender varchar(6), visa varchar(10), flight_no number(5))
+
+9.create table flight (flight_no number(5) primary key, passenger_capacity number(10))
+
+8.1.alter table carry add constraint flight foreign key (flight_no) references flight (flight_no)
+
+10.create table fly(pi_id number(10) primary key, pi_name varchar2(30), pi_phn_no number(15), pi_join_date date, pi_gender varchar(6), pi_blood_group varchar(6), salary number(6,2), flight_no number(5))
+
+10.1.alter table fly add constraint glight foreign key (flight_no) references flight (flight_no)
+
+11.create table pilot(pi_id number(10) primary key, pi_name varchar2(30), pi_phn_no number(15), pi_join_date date, pi_gender varchar(6), pi_blood_group varchar(6), salary number(6,2))
+
+12.create table controlofficer(c_id number(10) primary key, c_name varchar2(30), c_phn_no number(15), c_join_date date, salary number(6,2))
+
+13.create table communicate (pi_id number(10) primary key, c_id number(10))
+
+14.create table assist(ah_name varchar2(30), ah_id number(10) primary key, ah_join_date date, ah_blood_group varchar(6), ah_gender varchar(6), ah_phn_no varchar(15), salary number(6,2),pi_id number(10))
+
+14.1.alter table assist add constraint pi foreign key (pi_id) references pilot (pi_id)
+
+15.create table airline(airline_no number(10) primary key, airline_name varchar(10))
+
+
+16.create table work(pi_id number(10) primary key, pi_name varchar2(30), pi_phn_no number(15), pi_join_date date, pi_gender varchar(6), pi_blood_group varchar(6), salary number(6,2),ah_name varchar2(30), ah_id number(10), ah_join_date date, ah_blood_group varchar(6), ah_gender varchar(6), ah_phn_no varchar(15),airline_no number(10))
+
+16.1.alter table work add constraint al foreign key (airline_no) references airline (airline_no)
+
+
+16.2.alter table work add constraint an foreign key (ah_id) references airhostess (ah_id)
+
+17.describe passenger
+
+18.describe buy
+
+19.describe location
+
+20.describe airhostess
+
+21.describe service
+
+22.describe carry
+
+23.describe flight
+
+24.describe fly
+
+25.describe pilot
+
+26.describe controlofficer
+
+27.describe communicate
+
+28.describe assist
+
+29.describe airline
+
+30.describe work
