@@ -1,0 +1,134 @@
+1.1)insert into passenger (p_name, pass_no, p_phn_no, p_blood_group, p_gender, visa) values ('GOPAL', 'AZ267508', '01300867918', 'A+', 'MALE', 'VL0086')
+
+1.2)insert into passenger (p_name, pass_no, p_phn_no, p_blood_group, p_gender, visa) values ('HABLU', 'AY690348', '01700887910', 'AB+', 'MALE', 'VL9069')
+
+1.3)insert into passenger (p_name, pass_no, p_phn_no, p_blood_group, p_gender) values ('JOGESH', 'AX006890', '01612014281', 'O+', 'MALE')
+
+1.4)insert into passenger (p_name, pass_no, p_phn_no, p_blood_group, p_gender, visa) values ('NUT', 'AW396805', '01590048410', 'A-', 'MALE', 'VL3945')
+
+1.5)select* from passenger
+
+2.1)insert into buy (ticket_no, flight_date, seat_no, ticket_type, price, flight_no, pass_no) values ('10068', '11-JAN-23', '11', 'BUSINESS', '2500.00', '109','AZ267508')
+
+2.2)insert into buy (ticket_no, flight_date, seat_no, ticket_type, price, flight_no, pass_no) values ('10069', '15-JUL-23', '12', 'ECONOMI', '5000.00', '110','AY690348')
+
+2.3)insert into buy (ticket_no, flight_date, seat_no, ticket_type, price, flight_no, pass_no) values ('10070', '16-OCT-24', '22', 'FIRST', '8000.00', '115','AX006890')
+
+2.4)insert into buy (ticket_no, flight_date, seat_no, ticket_type, price, flight_no, pass_no) values ('10071', '18-SEP-23', '18', 'BUSINESS', '2500.00', '116','AW396805')
+
+2.5)select* from buy
+
+3.1)insert into location (city, country) values ('ALSTON', 'UK')
+
+3.2)insert into location (city, country) values ('DHAKA', 'BD')
+
+3.3)insert into location (city, country) values ('METIS', 'CHANADA')
+
+3.4)insert into location (city, country) values ('KUIUMBA', 'RUSSIA')
+
+3.5)select* from location
+
+4.1)insert into airhostess (ah_name, ah_id, ah_join_date, ah_blood_group, ah_gender, ah_phn_no, salary) values ('SADIA', '1009','11-JAN-21', 'AB+', 'FEMALE', '01315239817', '9000')
+
+4.2)insert into airhostess (ah_name, ah_id, ah_join_date, ah_blood_group, ah_gender, ah_phn_no, salary) values ('PAPIA', '1010','12-FEB-21', 'A+', 'FEMALE', '01303249949', '8000')
+
+4.3)insert into airhostess (ah_name, ah_id, ah_join_date, ah_blood_group, ah_gender, ah_phn_no, salary) values ('FARIA', '1014','12-JUN-22', 'O+', 'FEMALE', '01318175642', '7000')
+
+4.4)insert into airhostess (ah_name, ah_id, ah_join_date, ah_blood_group, ah_gender, ah_phn_no, salary) values ('BRISTY', '1015','17-JUL-23', 'B+', 'FEMALE', '01398574284', '6000')
+
+4.5)select* from airhostess
+
+5.1)insert into service (pass_no, ah_id) values ('AZ267508', '1009')
+
+5.2)insert into service (pass_no, ah_id) values ('AY690348', '1010')
+
+5.3)insert into service (pass_no, ah_id) values ('AX006890', '1014')
+
+5.4)insert into service (pass_no, ah_id) values ('AW396805', '1015')
+
+5.5)select* from service
+
+6.1)insert into flight (flight_no, passenger_capacity) values ('109', '250')
+
+6.2)insert into flight (flight_no, passenger_capacity) values ('110', '300')
+
+6.3)insert into flight (flight_no, passenger_capacity) values ('114', '350')
+
+6.4)insert into flight (flight_no, passenger_capacity) values ('115', '400')
+
+6.5)select* from flight
+
+7.1)insert into fly (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary, flight_nO) values ('2224', 'KOPIL', '01612114181', '11-JAN-20', 'MALE', 'A-', '5000', '109') 
+
+7.2)insert into fly (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary, flight_nO) values ('2227', 'SUMAYA', '01900885611', '15-JUL-20', 'FEMALE', 'AB+', '6000', '110')
+
+7.3)insert into fly (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary, flight_nO) values ('2229', 'BISWAS', '01914488255', '15-JUN-21', 'MALE', 'O+', '7000', '114')
+
+
+7.4)insert into fly (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary, flight_nO) values ('2226', 'YEA', '01315323722', '15-JUL-22', 'MALE', 'A+', '8000', '115')
+
+7.5)select* from fly
+
+8.1)insert into pilot (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary) values ('2224', 'KOPIL', '01612114181', '11-JAN-20', 'MALE', 'A-', '5000')
+
+8.2)insert into pilot (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary) values ('2227', 'SUMAYA', '01900885611', '15-JUL-20', 'FEMALE', 'AB+', '6000')
+
+8.3)insert into pilot (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary) values ('2229', 'BISWAS', '01914488255', '15-JUN-21', 'MALE', 'O+', '7000')
+
+8.4)insert into pilot (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary) values ('2226', 'YEA', '01315323722', '15-JUL-22', 'MALE', 'A+', '8000')
+
+8.5)select* from pilot
+
+9.1)insert into controlofficer (c_id,c_name, c_phn_no, c_join_date, salary) values ('3354', 'NAYEM', '01315238970', '11-JUL-21', '5500')
+
+9.2)insert into controlofficer (c_id,c_name, c_phn_no, c_join_date, salary) values ('3356', 'AKASH', '01315238972', '11-JAN-21', '6500')
+
+
+9.3)insert into controlofficer (c_id,c_name, c_phn_no, c_join_date, salary) values ('3358', 'ABIR', '01315238974', '11-FEB-22', '7500')
+
+9.4)insert into controlofficer (c_id,c_name, c_phn_no, c_join_date, salary) values ('3359', 'SADMAN', '01315238976', '11-OCT-22', '8500')
+
+9.5select* from controlofficer
+
+10.1)insert into communicate (pi_id, c_id) values ('2224', '3354')
+
+10.2)insert into communicate (pi_id, c_id) values ('2227', '3356')
+
+10.3)insert into communicate (pi_id, c_id) values ('2229', '3358')
+
+10.4)insert into communicate (pi_id, c_id) values ('2226', '3359')
+
+10.5)select* from communicate
+
+11.1)insert into assist (ah_name, ah_id, ah_join_date, ah_blood_group, ah_gender, ah_phn_no, salary, pi_id) values ('SADIA', '1009','11-JAN-21', 'AB+', 'FEMALE', '01315239817', '9000', '2224')
+
+11.2)insert into assist (ah_name, ah_id, ah_join_date, ah_blood_group, ah_gender, ah_phn_no, salary, pi_id) values ('PAPIA', '1010','12-FEB-21', 'A+', 'FEMALE', '01303249949', '8000', '2227')
+
+11.3)insert into assist (ah_name, ah_id, ah_join_date, ah_blood_group, ah_gender, ah_phn_no, salary, pi_id) values ('FARIA', '1014','12-JUN-22', 'O+', 'FEMALE', '01318175642', '7000', '2229')
+
+11.4)insert into assist (ah_name, ah_id, ah_join_date, ah_blood_group, ah_gender, ah_phn_no, salary, pi_id) values ('BRISTY', '1015','17-JUL-23', 'B+', 'FEMALE', '01398574284', '6000', '2226')
+
+11.5)select* from assist
+
+
+12.1).insert into airline values(78956, 'BD Airline')
+
+12.2)insert into airline values(78945, 'EMIRATES')
+
+
+12.3)insert into airline values(78934, 'SAUDI')
+
+12.4)insert into airline values(78923, 'TURKEY')
+12.5)select* from airline
+
+insert into work (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary) values ('2224', 'KOPIL', '01612114181', '11-JAN-20', 'MALE', 'A-', '5000')
+
+insert into work (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary) values ('2227', 'SUMAYA', '01900885611', '15-JUL-20', 'FEMALE', 'AB+', '6000')
+
+insert into work (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary) values ('2229', 'BISWAS', '01914488255', '15-JUN-21', 'MALE', 'O+', '7000')
+
+insert into work (pi_id, pi_name, pi_phn_no, pi_join_date, pi_gender, pi_blood_group, salary) values ('2226', 'YEA', '01315323722', '15-JUL-22', 'MALE', 'A+', '8000')
+
+
+
+
